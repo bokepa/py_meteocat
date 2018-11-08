@@ -1,0 +1,40 @@
+
+TODO PyMeteocat
+==============
+- Add if no date, get data for today
+- Not to use second date
+- Add argparse to parse all parameters
+- Add -l parameter, to list station
+- Add Period paramter ()
+
+DATETIME
+========
+- Meteocat stores temp in ranges of 30 min, for a timed query its need to calc the nearest datetime
+
+CACHE
+- Cache data in localfile with key station, date
+- Add cache option yes or not
+
+CALCULATIONS
+- Add some post calculations to date. By example: mean of the day
+- 
+
+STATIONS
+WORKING - Function to parse list Stations page, and return them into array
+PENDING - Search nearest station function, with lat long as input and telling distance.
+- Search top 3 nearest stations, same philosophy.
+- Create Station objects with its attribtes (lat lon,etc)
+- Get Station Picture
+
+STATION DATA
+- Some stations has more columns (indicatos)
+
+
+DEPENDENCIES
+geopy -  Used for distance calculations
+bs4 - BeautifulSoup html/xml scrapper library
+
+REQUIREMENTS
+* Internet connection to make real time date
+
+
